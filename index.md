@@ -1,5 +1,5 @@
 # Benjia Zhou, PhD, Macau University of Science and Technology
-<img style="float: right; padding-left:15px; width:300px" src="./images/生活照.jpg" >
+<img style="float: right; padding-left:15px; width:260px" src="./images/生活照.jpg" >
 
 Email: zhou.benjia0228@gmail.com   [Goolge Scholar](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao) [ResearchGate](https://www.researchgate.net/profile/Benjia-Zhou) [DBLP URL](https://dblp.org/pid/263/7275)
 
@@ -26,7 +26,8 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 1. **Zhou, B.**, Chen, Z., Clapés, A., Wan, J., Liang, Y., Escalera, S., ... & Zhang, D. "Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining", ICCV 2023.
 2. Yujun Ma, **Benjia Zhou**, Ruili Wang, Pichao WANG, "Multi-stage Factorized Spatio-Temporal Representation for RGB-D Action and Gesture Recognition", ACM MM 2023.
 3. **Zhou, B.**, Wang, P., Wan, J., Liang, Y., Wang, F., Zhang, D., ... & Jin, R. Decoupling and recoupling spatiotemporal representation for RGB-D-based motion recognition, CVPR 2022.
-4. **Zhou, B.**, Wan, J., Liang, Y., & Guo, G. Adaptive cross-fusion learning for multi-modal gesture recognition. VRIH (2021).
+4. **Zhou, B**., Li, Y., & Wan, J. Regional attention with architecture-rebuilt 3d network for rgb-d gesture recognition. AAAI 2021.
+5. **Zhou, B.**, Wan, J., Liang, Y., & Guo, G. Adaptive cross-fusion learning for multi-modal gesture recognition. VRIH (2021).
 
 ### Journal Articles (selected papers, [full paper list](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao))
 1. **Benjia Zhou**, Pichao Wang, Jun Wan, Liangliang Yan, and Fan Wang, "A Unified Multimodal De-and Re-coupling Framework for RGB-D Motion Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023. [paper](https://arxiv.org/pdf/2211.09146.pdf) [code](https://github.com/zhoubenjia/MotionRGBD-PAMI)
