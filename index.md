@@ -1,5 +1,5 @@
 # Benjia Zhou, PhD, Macau University of Science and Technology
-<img style="float: right; padding-left:15px; width:200px" src="./images/生活照.jpg" >
+<img style="float: right; padding-left:15px; width:300px" src="./images/生活照.jpg" >
 
 Email: zhou.benjia0228@gmail.com   [Goolge Scholar](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao) [ResearchGate](https://www.researchgate.net/profile/Benjia-Zhou) [DBLP URL](https://dblp.org/pid/263/7275)
 
@@ -9,8 +9,8 @@ Email: zhou.benjia0228@gmail.com   [Goolge Scholar](https://scholar.google.com/c
 2. 2023-07: One paper about Sign Language Translation (SLT) was accepted by **ICCV 2023**
 
 ## Biography
-I received the B.Eng. degree from the Minzu University of China, Beijing, China, in 2019, and he is currently pursuing a PhD degree at Macau University of Science and Technology, Macau, China.
-my research interests focus on action/gesture recognition, sign language recognition/translation and skeleton-based action generation.
+I received the B.Eng. degree from the Minzu University of China, Beijing, China, in 2019, and I am currently pursuing a PhD degree at Macau University of Science and Technology, Macau, China.
+My research interests focus on action/gesture recognition, sign language recognition/translation and skeleton-based action generation.
 
 ## Research Interests
 Computer Vision · Deep Learning · Video Understanding · Motion Recognition · Sign Language Translation
