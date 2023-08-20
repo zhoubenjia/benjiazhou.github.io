@@ -33,5 +33,5 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 1. **Benjia Zhou**, Pichao Wang, Jun Wan, Liangliang Yan, and Fan Wang, "A Unified Multimodal De-and Re-coupling Framework for RGB-D Motion Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023. [paper](https://arxiv.org/pdf/2211.09146.pdf) [code](https://github.com/zhoubenjia/MotionRGBD-PAMI)
 2. Yu, Z., **Zhou, B.**, Wan, J., Wang, P., Chen, H., Liu, X., ... & Zhao, G. Searching multi-rate and multi-modal temporal enhanced networks for gesture recognition. IEEE Transactions on Image Processing (**TIP**), 2021.
 
-Invited Conference Reviewer:
+## Invited Conference Reviewer:
  AAAI'23; AAAI'24; FG'24
