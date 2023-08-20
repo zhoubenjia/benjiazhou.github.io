@@ -17,7 +17,7 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 
 ## Selected Awards and Honors
 1. IEEE Finland SP/CAS Paper Award 2022 Second Prize.
-2. HEART-MET Gesture Recognition Challenge 2021 Second Prize.
+2. HEART-MET Gesture Recognition Challenge 2021 Second Prize: [Results of the HEART-MET Gesture Recognition and Activity Recognition Challenges](https://metricsproject.eu/news/heart-met-challenges-results-1/).
 
 ## Publications
 
