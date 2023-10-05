@@ -3,6 +3,8 @@
 
 Email: zhou.benjia0228@gmail.com   [Goolge Scholar](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao) [ResearchGate](https://www.researchgate.net/profile/Benjia-Zhou) [DBLP URL](https://dblp.org/pid/263/7275)
 
+![Benjia Zhou's GitHub stats](https://github-readme-stats.vercel.app/api?username=zhoubenjia&hide=commits,prs,contribs)
+
 ## Recent News
 
 1. 2023-07: One paper about RGB-D action recognition was accepted by **ACM MM 2023**
