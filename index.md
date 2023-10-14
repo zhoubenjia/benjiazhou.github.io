@@ -21,6 +21,7 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 ## Selected Awards and Honors
 1. Recipient of the second prize of the IEEE Finland Jt. Chapter SP/CAS Best Paper Award (2022)
 2. 2nd Place on [Results of the HEART-MET Gesture Recognition and Activity Recognition Challenges](https://metricsproject.eu/news/heart-met-challenges-results-1/).
+3. 4nd Place on [ICIAP Multimodal Action Recognition Competition](https://iplab.dmi.unict.it/MECCANO/challenge.html).
 
 ## Publications
 
@@ -33,7 +34,7 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 5. **Zhou, B.**, Wan, J., Liang, Y., & Guo, G. Adaptive cross-fusion learning for multi-modal gesture recognition. VRIH (2021).
 
 ### Journal Articles (selected papers, [full paper list](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao))
-1. **Benjia Zhou**, Pichao Wang, Jun Wan, Liangliang Yan, and Fan Wang, "A Unified Multimodal De-and Re-coupling Framework for RGB-D Motion Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023. [paper](https://arxiv.org/pdf/2211.09146.pdf) [code](https://github.com/zhoubenjia/MotionRGBD-PAMI)
+1. **Benjia Zhou**, Pichao Wang, Jun Wan, Liangliang Yan, and Fan Wang, "A Unified Multimodal De-and Re-coupling Framework for RGB-D Motion Recognition", IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023.
 2. Yu, Z., **Zhou, B.**, Wan, J., Wang, P., Chen, H., Liu, X., ... & Zhao, G. Searching multi-rate and multi-modal temporal enhanced networks for gesture recognition. IEEE Transactions on Image Processing (**TIP**), 2021.
 
 ## Invited Conference Reviewer:
