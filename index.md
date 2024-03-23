@@ -1,4 +1,4 @@
-# Benjia Zhou, PhD, Macau University of Science and Technology
+# Benjia Zhou, Ph.D, Macau University of Science and Technology
 <img style="float: right; padding-left:15px; width:260px" src="./images/生活照.jpg" >
 
 Email: zhou.benjia0228@gmail.com   
@@ -13,7 +13,7 @@ Email: zhou.benjia0228@gmail.com
 
 ## Biography
 I received the B.Eng. degree from the Minzu University of China, Beijing, China, in 2019, and I am currently pursuing a PhD degree at Macau University of Science and Technology, Macau, China.
-My research interests focus on action/gesture recognition, sign language recognition/translation and skeleton-based action generation.
+My research interests focus on action/gesture recognition and sign language recognition/translation/generation and skeleton-based action generation.
 
 ## Research Interests
 Computer Vision · Deep Learning · Video Understanding · Motion Recognition · Sign Language Translation
