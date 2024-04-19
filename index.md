@@ -39,4 +39,4 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 2. Yu, Z., **Zhou, B.**, Wan, J., Wang, P., Chen, H., Liu, X., ... & Zhao, G. Searching multi-rate and multi-modal temporal enhanced networks for gesture recognition. IEEE Transactions on Image Processing (**TIP**), 2021.
 
 ## Invited Conference Reviewer:
- AAAI'23; AAAI'24; FG'24,CIBM'24,IJCAI'24
+ AAAI'23; AAAI'24; FG'24,CIBM'24,IJCAI'24, JMIR'24
