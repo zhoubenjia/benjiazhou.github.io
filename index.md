@@ -7,7 +7,7 @@ Email: zhou.benjia0228@gmail.com
 [DBLP URL](https://dblp.org/pid/263/7275)
 
 ## Recent News
-1. 2024-03: One paper about Gloss-free Sign Language Translation (SLT) was accepted by **COLING 2023**
+1. 2024-03: One paper about Gloss-free Sign Language Translation (SLT) was accepted by **COLING 2024**
 2. 2023-07: One paper about RGB-D action recognition was accepted by **ACM MM 2023**
 3. 2023-07: One paper about Sign Language Translation (SLT) was accepted by **ICCV 2023**
 
