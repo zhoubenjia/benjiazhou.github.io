@@ -41,4 +41,4 @@ Computer Vision · Deep Learning · Video Understanding · Motion Recognition ·
 ## Invited Conference Reviewer:
  AAAI'23, AAAI'24, FG'24, IJCAI'24, ACM MM'24
 ## Invited Journal Reviewer:
-CIBM'24, JMIR'24, TCSVT'24
+CIBM'24, JMIR'24, TCSVT'24, IJCV'24
