@@ -19,7 +19,7 @@ I received the Ph.D. degree in Artificial Intelligence and am currently an Assis
 
 ## Publications
 
-I have published more than 15 papers in leading journals and conferences. Selected papers are listed below. For the complete list, please see my [Google Scholar profile](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao).
+Selected papers are listed below. For the complete list, please see my [Google Scholar profile](https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao).
 
 ### Conference Papers
 
