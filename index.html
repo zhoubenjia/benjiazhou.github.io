@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjia Zhou</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #d9e2ec;
+      --link: #0b5cad;
+      --accent: #243b53;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.58;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 34px 28px 48px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: #102a43;
+      font-size: 34px;
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 26px 0 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--line);
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 8px 0 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .portrait {
+      float: right;
+      width: 245px;
+      margin: 2px 0 14px 24px;
+      border-radius: 4px;
+    }
+
+    .meta {
+      margin: 8px 0 12px;
+      color: var(--muted);
+    }
+
+    .intro {
+      max-width: 900px;
+    }
+
+    .interest {
+      margin-top: 10px;
+    }
+
+    .paper-list li {
+      padding-left: 2px;
+    }
+
+    .service {
+      margin-top: 6px;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        padding: 24px 18px 36px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .portrait {
+        float: none;
+        display: block;
+        width: min(245px, 100%);
+        margin: 0 0 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="portrait" src="./images/生活照.jpg" alt="Benjia Zhou">
+
+    <h1>Benjia Zhou</h1>
+    <p><strong>Assistant Professor</strong>, Beijing Institute of Technology, Zhuhai</p>
+    <p class="meta">
+      <strong>Email:</strong> zhou.benjia0228@gmail.com<br>
+      <strong>Profiles:</strong>
+      <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> ·
+      <a href="https://www.researchgate.net/profile/Benjia-Zhou">ResearchGate</a> ·
+      <a href="https://dblp.org/pid/263/7275">DBLP</a>
+    </p>
+
+    <p class="intro">
+      I received the Ph.D. degree in Artificial Intelligence and am currently an Assistant Professor
+      with the Beijing Institute of Technology, Zhuhai. Previously, I was an AIGC Research Scientist
+      with Tencent GY-Lab. My research interests include intelligent video analysis, spatio-temporal
+      representation learning, multimodal learning, and AI-generated content (AIGC). I have published
+      more than 15 papers in leading journals and conferences, including IEEE TPAMI, IEEE TIP,
+      IEEE TCSVT, CVPR, ICCV, AAAI, and ACM Multimedia.
+    </p>
+    <p class="interest"><strong>Research Interests:</strong> Intelligent Video Analysis · Spatio-temporal Representation Learning · Multimodal Learning · AI-generated Content (AIGC)</p>
+
+    <h2>Recent News</h2>
+    <ul>
+      <li><strong>2025-03:</strong> Our co-first-authored work, <strong>"C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval,"</strong> was accepted by <strong>IEEE TCSVT</strong>.</li>
+      <li><strong>2024-03:</strong> One paper on gloss-free sign language translation was accepted by <strong>COLING 2024</strong>.</li>
+      <li><strong>2023-07:</strong> One paper on RGB-D action recognition was accepted by <strong>ACM MM 2023</strong>.</li>
+      <li><strong>2023-07:</strong> One paper on sign language translation was accepted by <strong>ICCV 2023</strong>.</li>
+    </ul>
+
+    <h2>Publications</h2>
+    <p>I have published more than 15 papers in leading journals and conferences. Selected papers are listed below. For the complete list, please see my <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao">Google Scholar profile</a>.</p>
+
+    <h3>Conference Papers</h3>
+    <ul class="paper-list">
+      <li>Chen, Z., <strong>Zhou, B.</strong>, Li, J., Wan, J., Lei, Z., Jiang, N., ... &amp; Zhao, G. "Factorized Learning Assisted with Large Language Model for Gloss-free Sign Language Translation." <strong>COLING 2024</strong>.</li>
+      <li><strong>Zhou, B.</strong>, Chen, Z., Clapés, A., Wan, J., Liang, Y., Escalera, S., ... &amp; Zhang, D. "Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining." <strong>ICCV 2023</strong>.</li>
+      <li>Ma, Y., <strong>Zhou, B.</strong>, Wang, R., &amp; Wang, P. "Multi-stage Factorized Spatio-Temporal Representation for RGB-D Action and Gesture Recognition." <strong>ACM MM 2023</strong>.</li>
+      <li><strong>Zhou, B.</strong>, Wang, P., Wan, J., Liang, Y., Wang, F., Zhang, D., ... &amp; Jin, R. "Decoupling and Recoupling Spatiotemporal Representation for RGB-D-based Motion Recognition." <strong>CVPR 2022</strong>.</li>
+      <li><strong>Zhou, B.</strong>, Li, Y., &amp; Wan, J. "Regional Attention with Architecture-rebuilt 3D Network for RGB-D Gesture Recognition." <strong>AAAI 2021</strong>.</li>
+      <li><strong>Zhou, B.</strong>, Wan, J., Liang, Y., &amp; Guo, G. "Adaptive Cross-fusion Learning for Multi-modal Gesture Recognition." <strong>VRIH 2021</strong>.</li>
+    </ul>
+
+    <h3>Journal Articles</h3>
+    <ul class="paper-list">
+      <li>Chen, Z., <strong>Zhou, B.</strong> (co-first author), Huang, Y., et al. "C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval." <strong>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</strong>, 2025.</li>
+      <li><strong>Zhou, B.</strong>, Wang, P., Wan, J., Yan, L., &amp; Wang, F. "A Unified Multimodal De- and Re-coupling Framework for RGB-D Motion Recognition." <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</strong>, 2023.</li>
+      <li>Yu, Z., <strong>Zhou, B.</strong>, Wan, J., Wang, P., Chen, H., Liu, X., ... &amp; Zhao, G. "Searching Multi-rate and Multi-modal Temporal Enhanced Networks for Gesture Recognition." <strong>IEEE Transactions on Image Processing (TIP)</strong>, 2021.</li>
+    </ul>
+
+    <h2>Awards and Honors</h2>
+    <ul>
+      <li>Second Prize, IEEE Finland Jt. Chapter SP/CAS Best Paper Award, 2022.</li>
+      <li>2nd Place, <a href="https://metricsproject.eu/news/heart-met-challenges-results-1/">HEART-MET Gesture Recognition and Activity Recognition Challenges</a>.</li>
+      <li>4th Place, <a href="https://iplab.dmi.unict.it/MECCANO/challenge.html">ICIAP Multimodal Action Recognition Competition</a>.</li>
+    </ul>
+
+    <h2>Academic Service</h2>
+    <p class="service"><strong>Conference Reviewer:</strong> CVPR, AAAI, IJCAI, ACM MM, FG</p>
+    <p class="service"><strong>Journal Reviewer:</strong> IEEE TIP, IEEE TMM, IJCV, IEEE TCSVT, CIBM, JMIR</p>
+  </main>
+</body>
+</html>
