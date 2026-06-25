@@ -185,43 +185,112 @@
       box-shadow: 8px 8px 0 #dce5df;
     }
 
-    .facts {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .career {
       margin: 0 52px;
+      padding: 20px 0 18px;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
-    .fact {
-      min-width: 0;
-      padding: 15px 20px;
-      border-right: 1px solid var(--line);
+    .career-heading {
+      margin: 0 0 11px;
+      color: var(--forest-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
     }
 
-    .fact:first-child {
-      padding-left: 0;
+    .career-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 205px;
+      gap: 34px;
+      align-items: stretch;
     }
 
-    .fact:last-child {
-      border-right: 0;
+    .career-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .fact-label {
-      display: block;
-      margin-bottom: 2px;
+    .career-item {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 18px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--soft-line);
+    }
+
+    .career-item:last-child {
+      border-bottom: 0;
+    }
+
+    .career-date {
+      color: var(--rust);
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .career-detail {
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .career-detail strong {
+      color: var(--forest-dark);
+    }
+
+    .career-sublist {
+      margin: 6px 0 1px;
+      padding-left: 19px;
       color: var(--muted);
-      font-size: 11px;
+      font-size: 13.5px;
+    }
+
+    .career-sublist li {
+      margin: 4px 0;
+    }
+
+    .industry-marks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      margin: 0;
+      padding: 5px 0 5px 27px;
+      border-left: 1px solid var(--line);
+    }
+
+    .industry-mark {
+      margin: 0;
+      text-align: center;
+    }
+
+    .industry-mark img {
+      display: block;
+      width: 100%;
+      height: 45px;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: 0.62;
+      transition: filter 160ms ease, opacity 160ms ease;
+    }
+
+    .industry-mark img:hover {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+
+    .industry-mark--megvii img {
+      height: 52px;
+    }
+
+    .industry-mark figcaption {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
-    }
-
-    .fact-value {
-      display: block;
-      color: var(--ink);
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.35;
     }
 
     main {
@@ -441,20 +510,26 @@
         margin: 0 auto;
       }
 
-      .facts {
-        grid-template-columns: 1fr;
+      .career {
         margin: 0 28px;
       }
 
-      .fact,
-      .fact:first-child {
-        padding: 12px 0;
-        border-right: 0;
-        border-bottom: 1px solid var(--soft-line);
+      .career-item {
+        grid-template-columns: 128px minmax(0, 1fr);
       }
 
-      .fact:last-child {
-        border-bottom: 0;
+      .career-body {
+        grid-template-columns: 1fr;
+        gap: 19px;
+      }
+
+      .industry-marks {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        padding: 18px 0 0;
+        border-top: 1px solid var(--soft-line);
+        border-left: 0;
       }
 
       main {
@@ -506,9 +581,25 @@
         padding-left: 20px;
       }
 
-      .facts {
+      .career {
         margin-right: 20px;
         margin-left: 20px;
+      }
+
+      .career-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        padding: 9px 0;
+      }
+
+      .industry-marks {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .industry-mark img,
+      .industry-mark--megvii img {
+        height: 42px;
       }
 
       main {
@@ -577,20 +668,54 @@
       <img class="portrait" src="./images/ico.jpg" alt="Portrait of Benjia Zhou">
     </header>
 
-    <div class="facts" aria-label="Career highlights">
-      <div class="fact">
-        <span class="fact-label">Current Position</span>
-        <span class="fact-value">Assistant Professor, BIT Zhuhai</span>
+    <section class="career" aria-labelledby="career-heading">
+      <h2 class="career-heading" id="career-heading">Experience &amp; Education</h2>
+      <div class="career-body">
+        <ol class="career-list">
+          <li class="career-item">
+            <span class="career-date">2025.10 – Present</span>
+            <span class="career-detail"><strong>Assistant Professor</strong>, Beijing Institute of Technology, Zhuhai</span>
+          </li>
+          <li class="career-item">
+            <span class="career-date">2024.07 – 2025.10</span>
+            <span class="career-detail"><strong>Research Scientist</strong>, GY-Lab, Tencent Technology (Shanghai) Co., Ltd.</span>
+          </li>
+          <li class="career-item">
+            <span class="career-date">2021.09 – 2024.07</span>
+            <span class="career-detail">
+              <strong>Ph.D. in Artificial Intelligence</strong>, Macau University of Science and Technology
+              <ul class="career-sublist">
+                <li><strong>2021.10 – 2022.10:</strong> Computer Vision Algorithm Research, Alibaba DAMO Academy</li>
+                <li><strong>2023.03 – 2023.09:</strong> Computer Vision Algorithm Research, Megvii Technology</li>
+              </ul>
+            </span>
+          </li>
+          <li class="career-item">
+            <span class="career-date">2019.09 – 2021.08</span>
+            <span class="career-detail"><strong>M.Sc. in Computer and Information Systems</strong>, Macau University of Science and Technology</span>
+          </li>
+          <li class="career-item">
+            <span class="career-date">2015.09 – 2019.06</span>
+            <span class="career-detail"><strong>B.Eng. in Automation</strong>, Minzu University of China</span>
+          </li>
+        </ol>
+
+        <aside class="industry-marks" aria-label="Industry experience">
+          <figure class="industry-mark">
+            <img src="./images/tencent.svg" alt="Tencent">
+            <figcaption>GY-Lab</figcaption>
+          </figure>
+          <figure class="industry-mark">
+            <img src="./images/alibaba.svg" alt="Alibaba Group">
+            <figcaption>DAMO Academy</figcaption>
+          </figure>
+          <figure class="industry-mark industry-mark--megvii">
+            <img src="./images/megvii.png" alt="Megvii Technology">
+            <figcaption>Computer Vision Research</figcaption>
+          </figure>
+        </aside>
       </div>
-      <div class="fact">
-        <span class="fact-label">Industry Experience</span>
-        <span class="fact-value">Former AIGC Research Scientist, Tencent GY-Lab</span>
-      </div>
-      <div class="fact">
-        <span class="fact-label">Research Output</span>
-        <span class="fact-value">15+ papers in leading journals and conferences</span>
-      </div>
-    </div>
+    </section>
 
     <main id="content">
       <section id="biography">
