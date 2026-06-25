@@ -3,190 +3,760 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Benjia Zhou</title>
+  <meta name="description" content="Benjia Zhou is an Assistant Professor at Beijing Institute of Technology, Zhuhai, working on intelligent video analysis, multimodal learning, and AIGC.">
+  <title>Benjia Zhou | Academic Homepage</title>
   <style>
     :root {
       color-scheme: light;
-      --text: #1f2933;
-      --muted: #52606d;
-      --line: #d9e2ec;
-      --link: #0b5cad;
-      --accent: #243b53;
-      --bg: #ffffff;
+      --ink: #172126;
+      --muted: #5c686d;
+      --paper: #ffffff;
+      --canvas: #f2f4f3;
+      --line: #d8dedb;
+      --soft-line: #e9edeb;
+      --forest: #174f46;
+      --forest-dark: #113c36;
+      --rust: #a14c31;
+      --gold: #bf8a2e;
+      --max-width: 1080px;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.58;
-    }
-
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 34px 28px 48px;
-    }
-
-    h1 {
-      margin: 0 0 6px;
-      color: #102a43;
-      font-size: 34px;
-      line-height: 1.15;
-      font-weight: 700;
-    }
-
-    h2 {
-      margin: 26px 0 10px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid var(--line);
-      color: var(--accent);
-      font-size: 22px;
-      line-height: 1.25;
-    }
-
-    h3 {
-      margin: 18px 0 8px;
-      color: var(--accent);
-      font-size: 18px;
-    }
-
-    p {
-      margin: 8px 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: Arial, "Helvetica Neue", sans-serif;
+      font-size: 15.5px;
+      line-height: 1.62;
     }
 
     a {
-      color: var(--link);
-      text-decoration: none;
+      color: var(--forest);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: var(--rust);
     }
 
-    ul {
-      margin: 8px 0 0 0;
-      padding-left: 22px;
+    .skip-link {
+      position: absolute;
+      top: -50px;
+      left: 16px;
+      z-index: 10;
+      background: var(--paper);
+      color: var(--ink);
+      padding: 8px 12px;
     }
 
-    li {
-      margin: 7px 0;
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .site-header {
+      border-top: 5px solid var(--forest);
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-width);
+      min-height: 58px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 21px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover {
+      color: var(--rust);
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: var(--paper);
+      border-right: 1px solid var(--soft-line);
+      border-left: 1px solid var(--soft-line);
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 265px;
+      gap: 48px;
+      align-items: center;
+      padding: 46px 52px 38px;
+    }
+
+    .eyebrow {
+      margin: 0 0 7px;
+      color: var(--rust);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--forest-dark);
+      font-size: 44px;
+      line-height: 1.08;
+    }
+
+    .role {
+      margin: 10px 0 15px;
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .role strong {
+      color: var(--forest);
+    }
+
+    .profile-summary {
+      max-width: 670px;
+      margin: 0;
+      color: #3d494e;
+      font-size: 16px;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 18px;
+      margin: 19px 0 0;
+    }
+
+    .profile-links a {
+      font-weight: 700;
     }
 
     .portrait {
-      float: right;
-      width: 245px;
-      margin: 2px 0 14px 24px;
-      border-radius: 4px;
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 53% 48%;
+      border: 1px solid #cbd3cf;
+      box-shadow: 8px 8px 0 #dce5df;
     }
 
-    .meta {
-      margin: 8px 0 12px;
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 52px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fact {
+      min-width: 0;
+      padding: 15px 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .fact:first-child {
+      padding-left: 0;
+    }
+
+    .fact:last-child {
+      border-right: 0;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 2px;
       color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    .intro {
-      max-width: 900px;
+    .fact-value {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
     }
 
-    .interest {
-      margin-top: 10px;
+    main {
+      padding: 12px 52px 54px;
     }
 
-    .paper-list li {
-      padding-left: 2px;
+    section {
+      scroll-margin-top: 20px;
+      padding-top: 30px;
     }
 
-    .service {
-      margin-top: 6px;
+    .section-heading {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 28px;
+      align-items: baseline;
+      margin-bottom: 17px;
+      border-bottom: 1px solid var(--line);
     }
 
-    @media (max-width: 680px) {
-      main {
-        padding: 24px 18px 36px;
+    h2 {
+      margin: 0;
+      padding-bottom: 8px;
+      color: var(--forest-dark);
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .section-note {
+      margin: 0;
+      padding-bottom: 9px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .bio p {
+      margin: 0;
+      max-width: 920px;
+    }
+
+    .research-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--soft-line);
+      list-style: none;
+    }
+
+    .research-list li {
+      position: relative;
+      min-height: 47px;
+      padding: 12px 16px 12px 22px;
+      border-right: 1px solid var(--soft-line);
+      border-bottom: 1px solid var(--soft-line);
+      font-weight: 700;
+    }
+
+    .research-list li:nth-child(even) {
+      border-right: 0;
+    }
+
+    .research-list li::before {
+      position: absolute;
+      top: 19px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      background: var(--rust);
+      content: "";
+    }
+
+    .news-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .news-list li {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      gap: 18px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--soft-line);
+    }
+
+    .news-date {
+      color: var(--rust);
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .news-list p {
+      margin: 0;
+    }
+
+    .publications {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--soft-line);
+    }
+
+    .publication-meta {
+      color: var(--rust);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .publication-title {
+      margin: 0 0 3px;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .publication-authors {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .subheading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 22px 0 2px;
+      color: var(--forest-dark);
+      font-size: 17px;
+    }
+
+    .subheading::after {
+      flex: 1;
+      height: 1px;
+      background: var(--soft-line);
+      content: "";
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+    }
+
+    .plain-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .plain-list li {
+      margin: 9px 0;
+    }
+
+    .service-row {
+      margin: 0 0 13px;
+    }
+
+    .service-row strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--forest-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 20px 52px;
+      border-top: 1px solid var(--line);
+      background: #edf1ef;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 780px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
       }
 
-      h1 {
-        font-size: 30px;
+      .nav-links {
+        gap: 10px 16px;
+      }
+
+      .profile {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding: 34px 28px 28px;
       }
 
       .portrait {
-        float: none;
+        grid-row: 1;
+        width: min(280px, 100%);
+        aspect-ratio: 4 / 5;
+        margin: 0 auto;
+      }
+
+      .facts {
+        grid-template-columns: 1fr;
+        margin: 0 28px;
+      }
+
+      .fact,
+      .fact:first-child {
+        padding: 12px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--soft-line);
+      }
+
+      .fact:last-child {
+        border-bottom: 0;
+      }
+
+      main {
+        padding: 10px 28px 42px;
+      }
+
+      .section-heading {
         display: block;
-        width: min(245px, 100%);
-        margin: 0 0 16px;
+      }
+
+      .section-note {
+        padding-top: 4px;
+        text-align: left;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      footer {
+        flex-direction: column;
+        padding: 18px 28px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .nav {
+        padding-right: 18px;
+        padding-left: 18px;
+      }
+
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+      }
+
+      .profile {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .facts {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      main {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .research-list {
+        grid-template-columns: 1fr;
+      }
+
+      .research-list li {
+        border-right: 0;
+      }
+
+      .news-list li,
+      .publication {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+
+      .publication-title {
+        font-size: 16px;
+      }
+
+      footer {
+        padding-right: 20px;
+        padding-left: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <img class="portrait" src="./images/生活照.jpg" alt="Benjia Zhou">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-    <h1>Benjia Zhou</h1>
-    <p><strong>Assistant Professor</strong>, Beijing Institute of Technology, Zhuhai</p>
-    <p class="meta">
-      <strong>Email:</strong> zhou.benjia0228@gmail.com<br>
-      <strong>Profiles:</strong>
-      <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> ·
-      <a href="https://www.researchgate.net/profile/Benjia-Zhou">ResearchGate</a> ·
-      <a href="https://dblp.org/pid/263/7275">DBLP</a>
-    </p>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#">Benjia Zhou</a>
+      <ul class="nav-links">
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#service">Service</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p class="intro">
-      I received the Ph.D. degree in Artificial Intelligence and am currently an Assistant Professor
-      with the Beijing Institute of Technology, Zhuhai. Previously, I was an AIGC Research Scientist
-      with Tencent GY-Lab. My research interests include intelligent video analysis, spatio-temporal
-      representation learning, multimodal learning, and AI-generated content (AIGC). I have published
-      more than 15 papers in leading journals and conferences, including IEEE TPAMI, IEEE TIP,
-      IEEE TCSVT, CVPR, ICCV, AAAI, and ACM Multimedia.
-    </p>
-    <p class="interest"><strong>Research Interests:</strong> Intelligent Video Analysis · Spatio-temporal Representation Learning · Multimodal Learning · AI-generated Content (AIGC)</p>
+  <div class="page">
+    <header class="profile">
+      <div>
+        <p class="eyebrow">Academic Homepage</p>
+        <h1>Benjia Zhou</h1>
+        <p class="role"><strong>Assistant Professor</strong><br>Beijing Institute of Technology, Zhuhai</p>
+        <p class="profile-summary">
+          Researcher in intelligent video analysis, spatio-temporal representation learning,
+          multimodal learning, and AI-generated content.
+        </p>
+        <p class="profile-links">
+          <a href="mailto:zhou.benjia0228@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&amp;hl=zh-CN&amp;oi=ao">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Benjia-Zhou">ResearchGate</a>
+          <a href="https://dblp.org/pid/263/7275">DBLP</a>
+        </p>
+      </div>
+      <img class="portrait" src="./images/生活照.jpg" alt="Portrait of Benjia Zhou">
+    </header>
 
-    <h2>Recent News</h2>
-    <ul>
-      <li><strong>2025-03:</strong> Our co-first-authored work, <strong>"C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval,"</strong> was accepted by <strong>IEEE TCSVT</strong>.</li>
-      <li><strong>2024-03:</strong> One paper on gloss-free sign language translation was accepted by <strong>COLING 2024</strong>.</li>
-      <li><strong>2023-07:</strong> One paper on RGB-D action recognition was accepted by <strong>ACM MM 2023</strong>.</li>
-      <li><strong>2023-07:</strong> One paper on sign language translation was accepted by <strong>ICCV 2023</strong>.</li>
-    </ul>
+    <div class="facts" aria-label="Career highlights">
+      <div class="fact">
+        <span class="fact-label">Current Position</span>
+        <span class="fact-value">Assistant Professor, BIT Zhuhai</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Industry Experience</span>
+        <span class="fact-value">Former AIGC Research Scientist, Tencent GY-Lab</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Research Output</span>
+        <span class="fact-value">15+ papers in leading journals and conferences</span>
+      </div>
+    </div>
 
-    <h2>Publications</h2>
-    <p>I have published more than 15 papers in leading journals and conferences. Selected papers are listed below. For the complete list, please see my <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&hl=zh-CN&oi=ao">Google Scholar profile</a>.</p>
+    <main id="content">
+      <section id="biography">
+        <div class="section-heading">
+          <h2>Biography</h2>
+          <p class="section-note">Artificial Intelligence · Computer Vision · Multimodal Learning</p>
+        </div>
+        <div class="bio">
+          <p>
+            Benjia Zhou received the Ph.D. degree in Artificial Intelligence and is currently an
+            Assistant Professor with the Beijing Institute of Technology, Zhuhai. Previously, he was
+            an AIGC Research Scientist with Tencent GY-Lab. He has published more than 15 papers in
+            leading journals and conferences, including IEEE TPAMI, IEEE TIP, IEEE TCSVT, CVPR, ICCV,
+            AAAI, and ACM Multimedia.
+          </p>
+        </div>
+      </section>
 
-    <h3>Conference Papers</h3>
-    <ul class="paper-list">
-      <li>Chen, Z., <strong>Zhou, B.</strong>, Li, J., Wan, J., Lei, Z., Jiang, N., ... &amp; Zhao, G. "Factorized Learning Assisted with Large Language Model for Gloss-free Sign Language Translation." <strong>COLING 2024</strong>.</li>
-      <li><strong>Zhou, B.</strong>, Chen, Z., Clapés, A., Wan, J., Liang, Y., Escalera, S., ... &amp; Zhang, D. "Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining." <strong>ICCV 2023</strong>.</li>
-      <li>Ma, Y., <strong>Zhou, B.</strong>, Wang, R., &amp; Wang, P. "Multi-stage Factorized Spatio-Temporal Representation for RGB-D Action and Gesture Recognition." <strong>ACM MM 2023</strong>.</li>
-      <li><strong>Zhou, B.</strong>, Wang, P., Wan, J., Liang, Y., Wang, F., Zhang, D., ... &amp; Jin, R. "Decoupling and Recoupling Spatiotemporal Representation for RGB-D-based Motion Recognition." <strong>CVPR 2022</strong>.</li>
-      <li><strong>Zhou, B.</strong>, Li, Y., &amp; Wan, J. "Regional Attention with Architecture-rebuilt 3D Network for RGB-D Gesture Recognition." <strong>AAAI 2021</strong>.</li>
-      <li><strong>Zhou, B.</strong>, Wan, J., Liang, Y., &amp; Guo, G. "Adaptive Cross-fusion Learning for Multi-modal Gesture Recognition." <strong>VRIH 2021</strong>.</li>
-    </ul>
+      <section aria-labelledby="research-heading">
+        <div class="section-heading">
+          <h2 id="research-heading">Research Interests</h2>
+          <p class="section-note">Learning representations for video, multimodal signals, and generation</p>
+        </div>
+        <ul class="research-list">
+          <li>Intelligent Video Analysis</li>
+          <li>Spatio-temporal Representation Learning</li>
+          <li>Multimodal Learning</li>
+          <li>AI-generated Content (AIGC)</li>
+        </ul>
+      </section>
 
-    <h3>Journal Articles</h3>
-    <ul class="paper-list">
-      <li>Chen, Z., <strong>Zhou, B.</strong> (co-first author), Huang, Y., et al. "C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval." <strong>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</strong>, 2025.</li>
-      <li><strong>Zhou, B.</strong>, Wang, P., Wan, J., Yan, L., &amp; Wang, F. "A Unified Multimodal De- and Re-coupling Framework for RGB-D Motion Recognition." <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</strong>, 2023.</li>
-      <li>Yu, Z., <strong>Zhou, B.</strong>, Wan, J., Wang, P., Chen, H., Liu, X., ... &amp; Zhao, G. "Searching Multi-rate and Multi-modal Temporal Enhanced Networks for Gesture Recognition." <strong>IEEE Transactions on Image Processing (TIP)</strong>, 2021.</li>
-    </ul>
+      <section id="news">
+        <div class="section-heading">
+          <h2>Recent News</h2>
+          <p class="section-note">Selected research updates</p>
+        </div>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2025-03</span>
+            <p>Our co-first-authored work, <strong>C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval</strong>, was accepted by <strong>IEEE TCSVT</strong>.</p>
+          </li>
+          <li>
+            <span class="news-date">2024-03</span>
+            <p>One paper on gloss-free sign language translation was accepted by <strong>COLING 2024</strong>.</p>
+          </li>
+          <li>
+            <span class="news-date">2023-07</span>
+            <p>One paper on RGB-D action recognition was accepted by <strong>ACM Multimedia 2023</strong>.</p>
+          </li>
+          <li>
+            <span class="news-date">2023-07</span>
+            <p>One paper on sign language translation was accepted by <strong>ICCV 2023</strong>.</p>
+          </li>
+        </ul>
+      </section>
 
-    <h2>Awards and Honors</h2>
-    <ul>
-      <li>Second Prize, IEEE Finland Jt. Chapter SP/CAS Best Paper Award, 2022.</li>
-      <li>2nd Place, <a href="https://metricsproject.eu/news/heart-met-challenges-results-1/">HEART-MET Gesture Recognition and Activity Recognition Challenges</a>.</li>
-      <li>4th Place, <a href="https://iplab.dmi.unict.it/MECCANO/challenge.html">ICIAP Multimodal Action Recognition Competition</a>.</li>
-    </ul>
+      <section id="publications">
+        <div class="section-heading">
+          <h2>Selected Publications</h2>
+          <p class="section-note">Complete list on <a href="https://scholar.google.com/citations?user=yAEKSn0AAAAJ&amp;hl=zh-CN&amp;oi=ao">Google Scholar</a></p>
+        </div>
 
-    <h2>Academic Service</h2>
-    <p class="service"><strong>Conference Reviewer:</strong> CVPR, AAAI, IJCAI, ACM MM, FG</p>
-    <p class="service"><strong>Journal Reviewer:</strong> IEEE TIP, IEEE TMM, IJCV, IEEE TCSVT, CIBM, JMIR</p>
-  </main>
+        <h3 class="subheading">Journal Articles</h3>
+        <ol class="publications">
+          <li class="publication">
+            <div class="publication-meta">TCSVT<br>2025</div>
+            <div>
+              <p class="publication-title">C2RL: Content and Context Representation Learning for Gloss-free Sign Language Translation and Retrieval</p>
+              <p class="publication-authors">Z. Chen, <strong>B. Zhou</strong> (co-first author), Y. Huang, et al.</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">TPAMI<br>2023</div>
+            <div>
+              <p class="publication-title">A Unified Multimodal De- and Re-coupling Framework for RGB-D Motion Recognition</p>
+              <p class="publication-authors"><strong>B. Zhou</strong>, P. Wang, J. Wan, L. Yan, and F. Wang</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">TIP<br>2021</div>
+            <div>
+              <p class="publication-title">Searching Multi-rate and Multi-modal Temporal Enhanced Networks for Gesture Recognition</p>
+              <p class="publication-authors">Z. Yu, <strong>B. Zhou</strong>, J. Wan, P. Wang, H. Chen, X. Liu, et al.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="subheading">Conference Papers</h3>
+        <ol class="publications">
+          <li class="publication">
+            <div class="publication-meta">COLING<br>2024</div>
+            <div>
+              <p class="publication-title">Factorized Learning Assisted with Large Language Model for Gloss-free Sign Language Translation</p>
+              <p class="publication-authors">Z. Chen, <strong>B. Zhou</strong>, J. Li, J. Wan, Z. Lei, N. Jiang, et al.</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">ICCV<br>2023</div>
+            <div>
+              <p class="publication-title">Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining</p>
+              <p class="publication-authors"><strong>B. Zhou</strong>, Z. Chen, A. Clapés, J. Wan, Y. Liang, S. Escalera, et al.</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">ACM MM<br>2023</div>
+            <div>
+              <p class="publication-title">Multi-stage Factorized Spatio-Temporal Representation for RGB-D Action and Gesture Recognition</p>
+              <p class="publication-authors">Y. Ma, <strong>B. Zhou</strong>, R. Wang, and P. Wang</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">CVPR<br>2022</div>
+            <div>
+              <p class="publication-title">Decoupling and Recoupling Spatiotemporal Representation for RGB-D-based Motion Recognition</p>
+              <p class="publication-authors"><strong>B. Zhou</strong>, P. Wang, J. Wan, Y. Liang, F. Wang, D. Zhang, et al.</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">AAAI<br>2021</div>
+            <div>
+              <p class="publication-title">Regional Attention with Architecture-rebuilt 3D Network for RGB-D Gesture Recognition</p>
+              <p class="publication-authors"><strong>B. Zhou</strong>, Y. Li, and J. Wan</p>
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-meta">VRIH<br>2021</div>
+            <div>
+              <p class="publication-title">Adaptive Cross-fusion Learning for Multi-modal Gesture Recognition</p>
+              <p class="publication-authors"><strong>B. Zhou</strong>, J. Wan, Y. Liang, and G. Guo</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <div class="two-column">
+        <section id="awards">
+          <div class="section-heading">
+            <h2>Awards</h2>
+          </div>
+          <ul class="plain-list">
+            <li>Second Prize, IEEE Finland Joint Chapter SP/CAS Best Paper Award, 2022.</li>
+            <li>2nd Place, <a href="https://metricsproject.eu/news/heart-met-challenges-results-1/">HEART-MET Gesture Recognition and Activity Recognition Challenges</a>.</li>
+            <li>4th Place, <a href="https://iplab.dmi.unict.it/MECCANO/challenge.html">ICIAP Multimodal Action Recognition Competition</a>.</li>
+          </ul>
+        </section>
+
+        <section id="service">
+          <div class="section-heading">
+            <h2>Academic Service</h2>
+          </div>
+          <p class="service-row">
+            <strong>Conference Reviewer</strong>
+            CVPR, AAAI, IJCAI, ACM Multimedia, FG
+          </p>
+          <p class="service-row">
+            <strong>Journal Reviewer</strong>
+            IEEE TIP, IEEE TMM, IJCV, IEEE TCSVT, CIBM, JMIR
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Benjia Zhou</p>
+      <p>Last updated June 2026 · Hosted on GitHub Pages</p>
+    </footer>
+  </div>
 </body>
 </html>
